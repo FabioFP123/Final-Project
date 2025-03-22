@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+  <link rel="stylesheet" type="text/css" href="css/afton-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/image_viewer.css">
+  <link rel="stylesheet" type="text/css" href="css/fill.css">
+  <link rel="stylesheet" type="text/css" href="css/skip.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="Icon" type="image/x-icon" href="images/general_graphics/favicon/fazbear_logo.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Geo:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Rubik+Pixels&family=Silkscreen:wght@400;700&family=Sixtyfour+Convergence&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tourney:ital,wght@0,100..900;1,100..900&family=Workbench&family=ZCOOL+QingKe+HuangYou&display=swap"
+    rel="stylesheet">
+  <title>Navigation</title>
+</head>
+
+<body>
+
+  <header style="z-index: 100;">
+    <nav>
+      <nav>
+        <a href="index.html" class="skip round-left color-land">landing page</a>
+        <a href="gallery.html" class="skip color-fnaf1">Fazbears Pizza</a>
+        <a href="what_can_you_do.html" class="skip color-fnaf3">Fazbears Frights</a>
+        <a href="map.html" class="skip color-fnaf5">Circus Baby's</a>
+        <a href="map.html" class="skip color-fnafsb">Mega Pizzaplex</a>
+        <a href="map.html" class="skip round-right color-af">Afton Robotics</a>
+      </nav>
+    </nav>
+  </header>
+
+  <div class="fill-bg" style=" height: 100vh; z-index: -2; position: fixed; top: 50px;">
+    <img src="images/general_graphics/Doorway.webp"
+      alt="a background image example"
+      class="">
+  </div>
+
+  
+
+    <div id='imgViewer' class="imgViewer hidden">
+
+    </div>
+
+    <div id="gallery" class="gallery" style="opacity: 1;">
+      <!-- PUT ALL CONTENT IN HERE -->
+
+      <section class="fnaf-container flex-container" data-aos="fade-up" data-aos-delay="50">
+
+        <!-- Actually it goes here, in the section, so it fits in the container -->
+
+      <div class="row flex-space flex-center">
+        <div class="fill-2" style="width: 200px; height: 200px;" data-aos="fade-up" data-aos-delay="250"> <img
+            src="images/general_graphics/favicon/fazbear_logo.ico" alt="an image demo for the gallery code" data-full_image="general_graphics/favicon/fazbear_logo.ico"> </div>
+        <div class="title-adj" style="font-size: 2.8vw;" data-aos="fade-up" data-aos-delay="450">
+          <h1 class=";">AFTON</h1>
+          <h1 class="">ROBOTICS</h1>
+        </div>
+      </div>
+    </section>
+    </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="javascript/gallery.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
