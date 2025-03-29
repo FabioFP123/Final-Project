@@ -1,0 +1,132 @@
+@keyframes zoom {
+    from {transform: scale(100%);}
+    to {transform: scale(103%);}
+  }
+
+@keyframes zoomlogo {
+    from {transform: scale(150%);}
+    to {transform: scale(100%);}
+}
+
+p, h3, h2, h1{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+h1{
+    font-family: 'Rubik Glitch';
+    font-weight: 100;
+}
+
+h2, h3 {
+    font-family: 'Geo';
+    font-size: x-large;
+}
+
+p {
+    font-family: 'Bungee Hairline';
+    font-weight: 1000;
+}
+
+.mainimg{
+    box-shadow: 0px 10px 5px -5px#af00b5;
+}
+
+.glitch {
+    opacity: 0;
+}
+
+.heading-2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.visit_button {
+    width: 50%;
+}
+
+.visit_button:hover {
+    animation-name: zoom;
+    animation-duration: 0.2s;
+    transform: scale(103%);
+    cursor: pointer;
+}
+
+.section-2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.505);
+    padding-top: 3px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    box-shadow: 5px -10px 5px -5px#af00b5;
+}
+
+.ffp-logo {
+    width: 50%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    animation-name: zoomlogo;
+    animation-duration: 1s;
+}
+
+.ffp-logo:hover {
+    cursor: pointer;
+}
+
+.locations-grid {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+    grid-template-columns: 40% 40%;
+}
+
+.credits-grid {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.location_description {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container {
+    width: 40vw;
+    height: 25vw;
+    margin-bottom: 10px;
+}
+
+.locations-image {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .locations-grid {
+        grid-template-columns: 100%;
+    }
+
+    .img-container {
+        width: 80vw;
+        height: 50vw;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
