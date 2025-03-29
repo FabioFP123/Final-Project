@@ -1,0 +1,49 @@
+/* Circus Baby's Footer/CTA Styles */
+.cb-cta-box 
+{
+    background-color: rgba(0, 20, 40, 0.8);
+    border: 3px solid #ff4d9e;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 70%;
+}
+
+.cb-button 
+{
+    font-family: 'Silkscreen', sans-serif;
+    background: linear-gradient(to right, #00adee, #ff4d9e);
+    color: white;
+    padding: 15px 30px;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cb-button:hover 
+{
+    background: linear-gradient(to right, #ff4d9e, #00adee);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 920px) 
+{
+    .cb-cta-box 
+    {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+    .cb-button 
+    {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

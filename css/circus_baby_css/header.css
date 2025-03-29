@@ -1,0 +1,34 @@
+/* Circus Baby's Header Styles */
+.cb-title-main 
+{
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #00adee;
+    text-shadow: 0 0 10px rgba(0, 173, 238, 0.7);
+    letter-spacing: 2px;
+    margin-bottom: -10px;
+}
+
+.cb-title-sub 
+{
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #ff4d9e;
+    text-shadow: 0 0 10px rgba(255, 77, 158, 0.7);
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 920px) 
+{
+    .cb-title-main, .cb-title-sub 
+    {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+    .cb-title-main, .cb-title-sub 
+    {
+        font-size: 7vw;
+    }
+}
