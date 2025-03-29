@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Trade+Winds&display=swap');
+
+body {
+    display: grid;
+    --green: #008000;
+    --bg: rgb(0, 0, 0);
+    background-color: var(--bg);
+    color: var(--green);}
+
+h1, footer p
+{
+    font-family: "Trade Winds", "Sans Serif";
+    color: var(--green);
+    animation: flickerAnimation 4s infinite;
+}
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+h2,
+h3{
+    font-family: "Share Tech Mono";
+}
+
+p,ul
+{
+    font-family: "Share Tech Mono";
+    font-size: larger;
+}
+
+/* Page Header CSS */
+.image-container {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    opacity: 45%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+/* Grid Layouts */
+.grid-three-one {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: solid 1px var(--green);
+    border-radius: 5px;
+    margin: 25px;
+
+
+}
+
+.grid-one-three {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: solid 1px var(--green);
+    margin: 25px;
+    border-radius: 5px;
+
+}
+
+/* Images CSS */
+.gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+}
+
+.gallery-container {
+    width: auto;
+    height: auto;
+    border: 1px solid var(--green);
+    margin: 5px;
+}
+
+.center {
+    text-align: center;
+
+}
+
+/* Typewriter style */
+.typewriter h2,
+h3 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .12em solid var(--green);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    display: inline-block;
+    letter-spacing: 0;
+    animation:
+        typing 3s steps(50, end) forwards,
+        blink-caret 1.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        max-width: 0
+    }
+
+    to {
+        max-width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--green);
+    }
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    gap: 15px;
+}
+
+.card {
+
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+
+}
+
+footer
+{
+    text-align: center;
+    border-top: 2px solid #008000;
+    margin-top: 25px;
+    padding: 15px;
+}
+
