@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="sampling/css/image_viewer.css">
   <link rel="stylesheet" type="text/css" href="sampling/css/fill.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="Icon" type="image/x-icon" href="sampling/images/general_graphics/favicon/fazbear_logo.ico">
+  <link rel="Icon" type="image/x-icon" href="sampling/images/general_graphics/favicon/bonnie.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -108,7 +108,20 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2025 Freddy Fazbear's Pizza. All rights reserved.</p>
+          <p>Follow us on
+            <a href="#">Twitter</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="javascript/gallery.js"></script>
@@ -126,7 +139,7 @@
         sound.play();
         count = count + 1
         
-        if (count === 4) { 
+        if (count === 8) { 
           video.play();
           document.getElementById("video").style.visibility = "visible";
           count = 0;
