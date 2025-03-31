@@ -1,0 +1,124 @@
+.glitch-accomp{
+    color: white;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color:  #006AB1;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: white;
+    text-decoration: none;
+    width: 130px;
+    padding: 4px;
+    overflow: visible;
+    text-wrap: nowrap;
+}
+
+.glitch-accomp:hover span{
+    justify-content: center;
+    display: none;
+    background-color:  #b1002f;
+    display: none;
+  }
+
+.glitch-accomp:hover:before{
+    text-align:center;
+    content: "CYBERSTAN";
+    font-family: Sixtyfour Convergence;
+    background-color:  #b1002f;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: white;
+    text-decoration: none;
+    width: 150px;
+    padding: 4px;
+    overflow: visible;
+    text-wrap: nowrap;
+}
+
+@media screen and (max-width: 900px) {
+    .glitch-accomp{
+        color: white;
+        text-align:center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color:  #006AB1;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: white;
+        text-decoration: none;
+        width: 130px;
+        padding: 4px;
+        overflow: visible;
+        text-wrap: nowrap;
+    }
+    
+    .glitch-accomp:hover span{
+        justify-content: center;
+        display: none;
+        background-color:  #b1002f;
+        display: none;
+      }
+    
+    .glitch-accomp:hover:before{
+        text-align:center;
+        content: "CYBERSTAN";
+        font-family: Sixtyfour Convergence;
+        background-color:  #b1002f;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: white;
+        text-decoration: none;
+        width: 150px;
+        padding: 4px;
+        overflow: visible;
+        text-wrap: nowrap;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .glitch-accomp{
+        color: white;
+        text-align:center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color:  #006AB1;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: white;
+        text-decoration: none;
+        width: 130px;
+        padding: 4px;
+        overflow: visible;
+        text-wrap: nowrap;
+    }
+    
+    .glitch-accomp:hover span{
+        justify-content: center;
+        display: none;
+        background-color:  #b1002f;
+        display: none;
+      }
+    
+    .glitch-accomp:hover:before{
+        text-align:center;
+        content: "CYBERSTAN";
+        font-family: Sixtyfour Convergence;
+        background-color:  #b1002f;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: white;
+        text-decoration: none;
+        width: 150px;
+        padding: 4px;
+        overflow: visible;
+        text-wrap: nowrap;
+
+}
+}

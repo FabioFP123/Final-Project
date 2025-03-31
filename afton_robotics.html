@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="css/slideshow.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/afton_css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/flexbox.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/afton-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/grids2.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/image_viewer.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/grid_home_p2.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/slideshow.css">
+  <link rel="stylesheet" type="text/css" href="css/afton_css/fill.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="Icon" type="image/x-icon" href="sampling/images/general_graphics/favicon/fazbear_logo.ico">
+  <style>
+    html {
+      cursor: url(sampling/images/cursor/Glitch_Cursor_10.ani), auto;
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Geo:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Rubik+Pixels&family=Silkscreen:wght@400;700&family=Sixtyfour+Convergence&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tourney:ital,wght@0,100..900;1,100..900&family=Workbench&family=ZCOOL+QingKe+HuangYou&display=swap"
+    rel="stylesheet">
+  <title>Afton Robotics</title>
+</head>
+
+<body>
+
+  <header style="z-index: 100;">
+    <nav>
+      <nav>
+        <a href="gallery.html" class="skip round-left color-fnaf1">Fazbears Pizza</a>
+        <a href="what_can_you_do.html" class="skip color-fnaf3">Fazbears Frights</a>
+        <a href="map.html" class="skip color-fnaf5">Circus Baby's</a>
+        <a href="map.html" class="skip color-fnafsb">Mega Pizzaplex</a>
+        <a href="map.html" class="skip color-af">Afton Robotics</a>
+        <a href="map.html" class="skip round-right color-af">Credits</a>
+      </nav>
+    </nav>
+  </header>
+
+  <div class="fill-bg" style=" height: 100vh; z-index: -2; position: fixed; top: 0px;">
+    <img src="sampling/images/general_graphics/Doorway.webp"
+      alt="Fnaf sister location background, right before entering the scooping room." class="">
+  </div>
+
+  <!-- <img src="images/general_graphics/helldivers_logo.png" alt="" class="spacer auto-margin" style="width: 700px;">
+    <div class=""></div> -->
+  <section class="fnaf-container flex-container">
+
+    <div id='imgViewer' class="imgViewer hidden">
+
+    </div>
+
+    <div id="gallery" class="gallery" style="opacity: 1;">
+      <!-- PUT ALL CONTENT IN HERE -->
+
+      <!-- TITLE SEGMENT -->
+      <div class="row flex-space2 flex-center">
+        <div class=" title-adj2"> <img class="title-adj2" src="sampling/images/general_graphics/logo2.gif" alt=""
+            data-full_image="images/general_graphics/logo2.gif"> </div>
+        <div class="title-adj">
+          <h1 class="cool-text2 title-adj2">AFTON</h1>
+          <h1 class="cool-text2 title-adj2">ROBOTICS</h1>
+        </div>
+      </div>
+      <!-- TITLE SEGMENT END -->
+
+      <!-- IMAGE GALLERY -->
+      <h1 class="cool-text pad-hb title-adj1">The Joy Of Creation</h1>
+      <div class="row flex-space auto-margin flex-center">
+        <div class="fill-2 bevel image-overlay layer-container" style="width: 200px; height: 200%;">
+          <section class="image-overlay"></section>
+          <img src="sampling/images/characters/animatronics/bonnie.jpg"
+            alt="Bonnie the bunny, guitarist of the new and improved Fazbears Pizza!"
+            data-full_image="images/characters/animatronics/bonnie.jpg">
+        </div>
+
+        <div class="fill-2 bevel image-overlay layer-container" style="width: 200px; height: 200%;">
+          <section class="image-overlay"></section>
+          <img src="sampling/images/characters/animatronics/freddy_fazbear.jpg"
+            alt="Freddy Fazbear, star of the show in the new and improved Fazbears Pizza!"
+            data-full_image="images/characters/animatronics/freddy_fazbear.jpg">
+        </div>
+
+        <div class="fill-2 bevel image-overlay layer-container" style="width: 200px; height: 200%;">
+          <section class="image-overlay"></section>
+          <img src="sampling/images/characters/animatronics/chica.jpg"
+            alt="A Helldiver giving a thumbs up in the middle of conflict. What are you waiting for? Join the Helldivers today!"
+            data-full_image="images/characters/animatronics/chica.jpg">
+        </div>
+
+        <div class="fill-2 bevel image-overlay layer-container" style="width: 200px; height: 200%;">
+          <section class="image-overlay"></section>
+          <img src="sampling/images/characters/animatronics/foxy.jpg"
+            alt="Foxy the pirate, full of stories and adventure in the new and improved Fazbears Pizza!"
+            data-full_image="images/characters/animatronics/foxy.jpg">
+        </div>
+        <div class="fill-2 bevel image-overlay layer-container" style="width: 200px; height: 200%;">
+          <section class="image-overlay"></section>
+          <img src="sampling/images/characters/animatronics/fredbear1_cropped.png"
+            alt="Foxy the pirate, full of stories and adventure in the new and improved Fazbears Pizza!"
+            data-full_image="images/characters/animatronics/fredbear1_cropped.png">
+        </div>
+        <div class="fill-2 bevel image-overlay layer-container" style="width: 200px; height: 200%;">
+          <section class="image-overlay"></section>
+          <img class="animation" src="sampling/images/characters/animatronics/springbonnie1.jpg"
+            alt="Foxy the pirate, full of stories and adventure in the new and improved Fazbears Pizza!"
+            data-full_image="images/characters/animatronics/springbonnie2.jpg">
+        </div>
+      </div>
+      <!-- IMAGE GALLERY END -->
+      <p class="pad-2b pad-ls text-size">We here at Afton Robotics find joy in bringing these wonderful characters to
+        life through the use of applied robotics. Since <span class="cool-text1 flash">1983</span>, our innovative efforts to revolutionize the entertainment
+        industry have not only led to breakthroughs in endoskeleton design for wide range application, but it has
+        brought life to fantasy and fun. Our partners and partnering companies have showcased powerful hydraulics,
+        modular <span class="cool-text1 flash">springlock</span> designs, and more through reconizable characters such as Spring Bonnie and Fredbear.</p>
+
+
+
+      <section class="grid sidebar-layout-split2 auto-margin" style="gap: 25px 0px;">
+        <div class="header">
+          <h1 class="cool-text" style="font-size: 50px; text-align:center; vertical-align: bottom; color: white;">Meet
+            The Team</h1>
+        </div>
+        <div class="sidebar" style="">
+          <div class="fill-5 sidebar auto-margin bevel image-overlay layer-container" style="width:90%; height: 100%;">
+            <section class="image-overlay"></section>
+            <img class="afton" src="sampling/images/characters/afton/william_afton.png"
+              alt="William Afton, owner of Afton Robotics." data-full_image="images/characters/afton/william_afton.png">
+          </div>
+        </div>
+        <div class="main">
+          <div class="fill-3 main auto-margin bevel image-overlay layer-container" style="width:90%; height: 100%;">
+            <section class="image-overlay"></section>
+            <img src="sampling/images/characters/edwin/edwin.png"
+              alt="Edwin Murray, ex-designer of experimental animatronic endoskeletons."
+              data-full_image="images/characters/edwin/edwin.png">
+          </div>
+        </div>
+        <div class="extra">
+          <div class="fill-3 main auto-margin bevel image-overlay layer-container" style="width:90%; height: 100%;">
+            <section class="image-overlay"></section>
+            <img src="sampling/images/characters/henry/henry.png"
+              alt="Henry Emily, designer of animatronic characters and supporting endoskeletons."
+              data-full_image="images/characters/henry/henry.png">
+          </div>
+        </div>
+
+      </section>
+      <p class="pad-2b pad-ls pad-ht text-size">With the guidance of our founder, William Afton, this team has built a
+        <span class="cool-text1 flash">connection</span> between the entertainment industry through interactive
+        preformance robotics. William Afton Designs the mechanisms behind each iterations of the endoskeletons, Henry
+        Emily brings our creations the cheerful appearance kids have come to love, and Edwin Murray is responsible for
+        assembling the animatronics and making their costumes. While partnering companies assist with materials, we've
+        been proud partner companies with Fazbear Entertainment since <span class="cool-text1 flash">1987</span></p>
+
+    </div>
+    <section><!-- SLIDE SHOW -->
+      <h1 class="cool-text pad-hb" style="font-size: 55px; text-align: center; color: white;">See Our Success</h1>
+      <section class="container auto-margin bevel2 image-overlay layer-container" style="width: 80%;">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <div class="fill-3" id="gallery" class="gallery" style="width:100%; height: 50%;">
+            <img src="sampling/images/blueprints/ballora_blueprint.jpg"
+              alt=" Ballora's Blueprints. Previous mechanisms have made movement and stability stiff, but our ballerina endo is able to balance on a single foot."
+              data-full_image="images/blueprints/ballora_blueprint.jpg">
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext center">2 / 4</div>
+          <div class="fill-3" id="gallery" class="gallery" style="width:100%;">
+            <img src="sampling/images/blueprints/circus_baby_blueprint.png"
+              alt="Circus Baby's Blueprints. Featuring an ice cream machine inside, a powerful mechanical scooper is able to pick up objects half of the endo's weight. Specially request by Afton."
+              data-full_image="images/blueprints/circus_baby_blueprint.png">
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <div class="fill-3" id="gallery" class="gallery" style="width:100%;">
+            <img src="sampling/images/blueprints/funtime_foxy_blueprint.jpg"
+              alt="Funtime Foxy's Blueprint. A landmark to our improving designs, Funtime Foxy is the strongest and most mobile animatronic to date."
+              data-full_image="images/blueprints/funtime_foxy_blueprint.jpg">
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <div class="fill-3" id="gallery" class="gallery" style="width:100%;">
+            <img src="sampling/images/blueprints/funtime_freddy_blueprint.jpg"
+              alt="Funtime Freddy's Blueprints. featuring an innovative mechanical puppet that can detach, move, and process information away from the central endoskeleton."
+              data-full_image="images/blueprints/funtime_freddy_blueprint.jpg">
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor bevel image-overlay layer-container"
+              src="sampling/images/blueprints/ballora_blueprint.jpg" style="width:100%" onclick="currentSlide(1)"
+              alt=" Ballora's Blueprints. Previous mechanisms have made movement and stability stiff, but our ballerina endo is able to balance on a single foot."
+              data-full_image="images/blueprints/ballora_blueprint.jpg">
+          </div>
+          <div class="column">
+            <img class="demo cursor bevel image-overlay layer-container"
+              src="sampling/images/blueprints/circus_baby_blueprint.png" style="width:100%" onclick="currentSlide(2)"
+              alt="Circus Baby's Blueprints. Featuring an ice cream machine inside, a powerful mechanical scooper is able to pick up objects half of the endo's weight. Specially request by Afton."
+              data-full_image="images/blueprints/circus_baby_blueprint.png">
+          </div>
+          <div class="column">
+            <img class="demo cursor bevel image-overlay layer-container"
+              src="sampling/images/blueprints/funtime_foxy_blueprint.jpg" style="width:100%" onclick="currentSlide(3)"
+              alt="Funtime Foxy's Blueprint. A landmark to our improving designs, Funtime Foxy is the strongest and most mobile animatronic to date."
+              data-full_image="images/blueprints/funtime_foxy_blueprint.jpg">
+          </div>
+          <div class="column">
+            <img class="demo cursor bevel image-overlay layer-container"
+              src="sampling/images/blueprints/funtime_freddy_blueprint.jpg" style="width:100%" onclick="currentSlide(4)"
+              alt="Funtime Freddy's Blueprints. featuring an innovative mechanical puppet that can detach, move, and process information away from the central endoskeleton."
+              data-full_image="images/blueprints/funtime_freddy_blueprint.jpg">
+          </div>
+        </div>
+      </section>
+    </section><!-- SLIDESHOW END -->
+    <p class="pad-2b pad-ls pad-ht text-size">Created independantly by our founder, William Afton, Circus Baby's
+      Entertainment and Rental features our most ambitious endoskeleton designs yet! The mechanical parts are all
+      connected by large cables that can replicate the muscles of a human being, while being three times as strong. With
+      these features, <span class="cool-text1">it's me</span>ant to give our endoskeletons
+      a wider range of articulation and therefore immersion. Most of our endoskeletons bridge gaps beyond
+      our competitors, with the character 'ballora' being able to balance the entire structure on a single base, all
+      while rotating repeatedly. Speed, computing, balance, endurance, and most of all, joy. We have surpassed the
+      rest in all these fields.</p>
+
+
+    <!-- TV SECTION -->
+    <div class="layer-container spacerb" style="margin-left: 25%; margin-right: 25%">
+
+      <img src="sampling/images/tv/tv_frame.png" alt="" class="tv-image" id="frame">
+
+      <textarea type="text" style="" class="tv-text" fdprocessedid="pabyvi" id="textbox"></textarea>
+
+      <div class="tv-display" style="pointer-events: none;"><img src=""
+          alt="the image that will contain various imagery and displays" class="tv-display" id="video"></div>
+
+      <div class="tv-display" style="pointer-events: none;"><video src=""
+          alt="the image that will contain various imagery and displays" class="tv-display" id="vid"></div>
+
+          <section class="tv-overlay" id="content"></section>
+
+
+    </div>
+    <!-- TV SECTION END -->
+
+    <!-- END OF CONTENT INSERT-->
+
+
+  </section> <!-- END OF SECTION-->
+
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="javascript/gallery.js"></script>
+  <script src="javascript/tv.js"></script>
+  <script src="javascript/soundeffect.js"></script>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+</body>
+
+</html>

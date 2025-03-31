@@ -1,0 +1,376 @@
+
+.list-of-font-families-used{
+
+}
+
+body{
+    /* background-color: #59779b; */
+    background-color: #ffffff;
+    z-index: 0;
+}
+
+h1{
+color: white;
+font-family: Sixtyfour Convergence;
+font-size: 100;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-family: Geo;
+
+}
+
+.text-size{
+    font-size: 24px;
+    font-family: Inknut Antiqua;
+    font-family: roboto;
+    font-weight: 200;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+.title-adj{
+    align-content: center;
+    /* text-align: center; */
+}
+
+.title-adj1{
+    font-size: 55px; text-align: center; color: white;
+    }
+
+.title-adj2{
+font-size: 3.5vw;
+}
+
+.title-adj2 img{
+    width: 200px;
+    height: 200px;
+    }
+
+.tv-text{
+    text-decoration: none;
+    border: none;
+    position: absolute;
+    top: 6%;
+    bottom: 13%;
+    left: 6%;
+    padding: 6%;
+    right: 6%;
+    z-index: 0;
+    background-color: #00000091;
+    color: white;
+    font-family: Workbench;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.tv-image{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: 4;
+    position: relative;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.tv-display{
+    position: absolute;
+    top: 0%;
+    bottom: 13%;
+    left: 2%;
+    padding: 6%;
+    right: 6%;
+    color: white;
+    font-family: Workbench;
+    font-size: 40px;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.tv-overlay{
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+    bottom: 13%;
+    left: 2%;
+    padding: 6%;
+    right: 6%;
+    background-color: rgba(2, 2, 2, 0.7);
+    opacity: 20%;
+    pointer-events: none;
+    /* background-image: linear-gradient(0deg, rgb(38, 0, 144) 50%, rgb(142, 0, 0) 50%); */
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 50%, rgb(74, 74, 74) 50%);
+    background-size: 5px 5px;
+    animation-name: translate;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+.fnaf-container {
+    border: 25px solid red;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-image: linear-gradient(90deg, rgba(255, 0, 255, 0) 0%, rgb(175, 0, 224) 10%, rgb(175, 0, 224) 90%, rgba(255, 0, 255, 0) 100%) 50 50 50 50 stretch stretch;
+    margin: auto;
+    background-color: rgba(2, 2, 2, 0.7);
+    background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.2) 50%, rgba(13, 13, 13, 0.2) 50%);
+    background-size: 10px 10px;
+    width: 900px;
+}
+
+.layer-container{
+    position: relative;
+}
+
+.wrap-image{
+    float: left;
+    width: 150px;
+    background: red;
+    margin: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+
+footer {
+    bottom: 0px;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+    /* position: sticky; */
+}
+
+.spacer{
+    margin-top: 200px;
+}
+.spacerb{
+    margin-bottom: 120px;
+}
+
+.bevel{
+    border-style: outset;
+    border-style: groove;
+    /* border-style: inset;
+    border-style: ridge; */
+    border-color: rgb(119, 119, 119);
+    border-radius: 5px;
+    border-width: 6px;
+}
+
+.bevel2{
+    border-style: outset;
+    /* border-style: inset;
+    border-style: ridge; */
+    border-color: rgb(119, 119, 119);
+    border-radius: 5px;
+    border-width: 14px;
+}
+
+.image-overlay section{
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(2, 2, 2, 0.7);
+    opacity: 20%;
+    pointer-events: none;
+    /* background-image: linear-gradient(0deg, rgb(38, 0, 144) 50%, rgb(142, 0, 0) 50%); */
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 50%, rgb(74, 74, 74) 50%);
+    background-size: 5px 5px;
+    animation-name: translate;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+.image-overlay img{
+position: relative;
+z-index: 1;
+}
+
+.cool-text{
+    background-size: 650px;
+    background-position: 50%;
+    opacity: 100%;
+    background-image: linear-gradient(to top, rgb(234, 213, 255), rgb(128, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cool-text1:hover{
+    background-size: 650px;
+    background-position: 50%;
+    opacity: 100%;
+    background-image: linear-gradient(to top, rgb(234, 213, 255), rgb(128, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.cool-text2{
+    background-size: 650px;
+    background-position: 50%;
+    opacity: 100%;
+    background-image: linear-gradient(to right, rgb(238, 0, 255), rgb(128, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.animation:hover{
+    animation-name: glitch1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.flash:hover{
+    animation-name: flashy;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.afton:hover{
+    animation-name: springtrap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes glitch1 {
+    0%   {content: url(/sampling/images/characters/animatronics/springbonnie2.jpg); opacity: 50%; }
+    10%  {content: url(/sampling/images/characters/animatronics/springbonnie1.jpg); opacity: 100%; }
+    35%  {content: url(/sampling/images/characters/animatronics/springbonnie2.jpg); opacity: 70%; }
+    40% {opacity: 30%; }
+    70% {content: url(/sampling/images/characters/animatronics/springbonnie1.jpg); opacity: 30%; }
+    75%  {content: url(/sampling/images/characters/animatronics/springbonnie2.jpg); opacity: 100%; }
+    80%  {content: url(/sampling/images/characters/animatronics/springbonnie1.jpg); opacity: 80%; }
+    95%  {content: url(/sampling/images/characters/animatronics/springbonnie2.jpg); opacity: 40%; }
+    100%  {content: url(/sampling/images/characters/animatronics/springbonnie1.jpg); opacity: 100%; }
+  }
+
+  @keyframes flashy {
+    0%   {opacity: 50%; }
+    10%  {opacity: 100%; }
+    35%  {opacity: 70%; }
+    70% {opacity: 30%; }
+    75%  {opacity: 100%; }
+    80%  {opacity: 80%; }
+    95%  {opacity: 40%; }
+    100%  {opacity: 100%; }
+  }
+  
+  @keyframes translate{
+    0%{opacity: 30%}
+    100%{opacity: 20%;}
+  }
+
+  @keyframes springtrap {
+    0%   {content: url(/sampling/images/tv/fun_static.jpg); opacity: 60%; }
+    10%  {content: url(/sampling/images/characters/afton/william_4_bg.png); opacity: 100%; }
+    35%  {content: url(/sampling/images/tv/fun_static.jpg); opacity: 70%; }
+    40% {content: url(/sampling/images/characters/afton/william_4_bg.png); opacity: 80%; }
+    70% {content: url(/sampling/images/characters/afton/william2.png); opacity: 50%; }
+    75%  {content: url(/sampling/images/tv/fun_static.jpg); opacity: 70%; }
+    80%  {content: url(/sampling/images/characters/afton/william_4_bg.png); opacity: 90%; }
+    95%  {content: url(/sampling/images/tv/fun_static.jpg); opacity: 60%; }
+    100%  {content: url(/sampling/images/characters/afton/william_4_bg.png); opacity: 100%; }
+  }
+/* .border {
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    border-radius: 5px; 
+    border-width: 4px;
+    border-style: solid;
+    padding: 5px;
+  } */
+
+/* .fade{
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+} */
+
+.gap-1{ gap: 500px; }
+.pad-1 { padding: 300px 0px 300px 0px;}
+.pad-5t { padding-top: 500px;}
+.pad-3t { padding-top: 300px;}
+.pad-2t { padding-top: 200px;}
+.pad-1t { padding-top: 100px;}
+.pad-ht { padding-top: 50px;}
+.pad-lt { padding-top: 30px;}
+.pad-5b { padding-bottom: 500px;}
+.pad-3b { padding-bottom: 300px;}
+.pad-2b { padding-bottom: 200px;}
+.pad-1b { padding-bottom: 100px;}
+.pad-hb { padding-bottom: 50px;}
+.pad-lb { padding-bottom: 30px;}
+.pad-1s { padding-left: 100px; padding-right: 100px;}
+.pad-2s { padding-left: 200px; padding-right: 200px;}
+.pad-3s { padding-left: 300px; padding-right: 300px;}
+.pad-4s { padding-left: 400px; padding-right: 400px;}
+.pad-5s { padding-left: 500px; padding-right: 500px;}
+.pad-hs { padding-left: 50px; padding-right: 50px;}
+.pad-ls { padding-left: 30px; padding-right: 30px;}
+
+@media screen and (max-width: 920px){
+    .fnaf-container {
+        background-color: rgba(2, 2, 2, 0.7);
+        border-left: 8px solid rgb(255, 226, 62);
+        border-right: 8px solid rgb(255, 226, 62);
+        margin: auto;
+        background-color: rgba(2, 2, 2, 0.7);
+        background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.2) 50%, rgba(13, 13, 13, 0.2) 50%);
+        background-size: 10px 10px;
+        width: 100%;
+    }
+
+    .title-adj1{
+        font-size: 55px; text-align: center; color: white;
+        }
+
+    .title-adj2 img{
+        width: 150px;
+        height: 150px;
+        }
+}
+
+@media screen and (max-width: 500px){
+    .tv-text{
+        text-decoration: none;
+        border: none;
+        position: absolute;
+        top: 6%;
+        bottom: 13%;
+        left: 6%;
+        padding: 6%;
+        right: 6%;
+        z-index: 1;
+        background-color: #00000091;
+        color: white;
+        font-family: Workbench;
+        font-size: 20px;
+        overflow: hidden;
+    }
+
+    .title-adj2 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .title-adj1{
+        font-size: 35px; text-align: center; color: white;
+    }
+}

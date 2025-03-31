@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Sixtyfour+Convergence&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Workbench&display=swap');
+
+.list-of-font-families-used{
+    font-family: "Pixelify Sans";
+    font-weight: 400 700; /* between */
+    font-style: normal;
+
+    font-family: "Sixtyfour Convergence", sans-serif; /* cyberstan promo text */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+
+      font-family: "Tomorrow", sans-serif; /* super earth promo text */
+      font-weight: 700; /* bold */
+      font-weight: 400; /* regular */
+      font-style: normal;
+      color: #FDD332;
+      text-shadow: -5px 5px rgba(0, 0, 0, 0.612);
+
+      font-family: "Rubik Mono One", monospace; /* super earth title text */
+      font-weight: 400;
+      font-style: normal;
+
+      font-family: "Roboto", sans-serif; /* used for regular text */
+      font-optical-sizing: auto;
+      font-weight: 100 900; /* Between */
+      font-style: normal;
+      color: white;
+
+      font-family: "Audiowide", sans-serif; /* galactic map text */
+      font-weight: 400;
+      font-style: normal;
+
+      font-family: "Black Ops One", system-ui; /* helldiver text */
+      font-weight: 400;
+      font-style: normal;
+
+      font-family: "Workbench", sans-serif; /* bot speak replacement */
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+}
+
+body{
+    /* background-color: #59779b; */
+    background-color: #000000;
+    z-index: 0;
+}
+
+h1{
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+h2{
+    font-family: "Tomorrow", sans-serif; /* super earth promo text */
+    font-weight: 700; /* bold */
+    font-style: normal;
+    color: #FDD332;
+    text-shadow: -5px 5px rgba(0, 0, 0, 0.612);
+}
+
+h3{
+    font-family: "Rubik Mono One", monospace; /* super earth title text */
+    font-weight: 400;
+    font-style: normal;  
+    color: white;
+    word-spacing: -30px;
+}
+
+.h3-galaxy{
+    font-family: "Rubik Mono One", monospace; /* super earth title text */
+    font-weight: 400;
+    font-style: normal;  
+    color: white;
+    word-spacing: 0px;
+}
+
+h4{
+    font-family: "Audiowide", sans-serif; /* galactic map text */
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: -5px 5px rgba(0, 0, 0, 0.612);
+}
+
+.democratic-container {
+    background-color: rgba(2, 2, 2, 0.7);
+    border-left: 8px solid rgb(255, 226, 62);
+    border-right: 8px solid rgb(255, 226, 62);
+
+    background-color: rgba(2, 2, 2, 0.7);
+    background-image: linear-gradient(0deg, rgba(2, 2, 2, 0.2) 50%, rgba(13, 13, 13, 0.2) 50%);
+    background-size: 10px 10px;
+}
+
+.title-adj-1{ position: relative; top: 550px; font-size: 150px; margin-left: 80px; margin-bottom: 0px; }
+
+.title-adj-2{ height: 90vh; z-index: -1; }
+
+.title-adj-3{ }
+
+.wcyd-adj-1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.wrap-image{
+    float: left;
+    width: 150px;
+    background: red;
+    margin: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.cool-text2{
+    background-size: 650px;
+    background-position: 50%;
+    background-image: linear-gradient(to right, rgb(238, 0, 255), rgb(128, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    bottom: 0px;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+    /* position: sticky; */
+}
+
+.spacer{
+    margin-top: 300px;
+}
+
+/* .border {
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+    border-radius: 5px; 
+    border-width: 4px;
+    border-style: solid;
+    padding: 5px;
+  } */
+
+/* .fade{
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+} */
+
+.gap-1{ gap: 500px; }
+.pad-1 { padding: 300px 0px 300px 0px;}
+.pad-5t { padding-top: 500px;}
+.pad-3t { padding-top: 300px;}
+.pad-2t { padding-top: 200px;}
+.pad-1t { padding-top: 100px;}
+.pad-ht { padding-top: 30px;}
+.pad-5b { padding-bottom: 500px;}
+.pad-3b { padding-bottom: 300px;}
+.pad-2b { padding-bottom: 200px;}
+.pad-1b { padding-bottom: 100px;}
+.pad-hb { padding-bottom: 50px;}
+.pad-lb { padding-bottom: 30px;}
+
+@media screen and (max-width: 1100px){
+    .title-adj-1{ position: relative; top: 600px; font-size: 12vw; margin-left: 50px; margin-bottom: 0px; }
+
+    .title-adj-2{ height: 90vh ; z-index: -1; }
+}
+
+@media screen and (max-width: 700px){
+    .title-adj-1{ top: 600px; font-size: 12vw; margin-bottom: 0px; margin: 0px 10vw; }
+    .title-adj-2{ height: 80vh ; z-index: -1; }
+    .wcyd-adj-1{font-size: 30px; word-spacing: 1px;
+    }
+    
+}
+
