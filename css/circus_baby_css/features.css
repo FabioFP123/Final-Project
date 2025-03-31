@@ -1,6 +1,5 @@
 /* Circus Baby's Features Styles */
-.cb-feature-box 
-{
+.cb-feature-box {
     background-color: rgba(0, 20, 40, 0.6);
     border: 3px solid #00adee;
     border-radius: 10px;
@@ -8,24 +7,25 @@
     width: 90%;
 }
 
-.cb-feature-item 
-{
+.cb-feature-item {
     text-align: center;
     padding: 10px;
 }
 
-.cb-subheading 
-{
+.cb-subheading {
     font-family: 'Silkscreen', sans-serif;
     color: #ff4d9e;
     margin-bottom: 10px;
     font-size: 1.3em;
 }
 
-@media screen and (max-width: 920px) 
-{
-    .cb-feature-box 
-    {
+.cb-feature-box {
+    margin-bottom: 80px;
+    /* Adds space before CTA section */
+}
+
+@media screen and (max-width: 920px) {
+    .cb-feature-box {
         width: 95%;
     }
 }

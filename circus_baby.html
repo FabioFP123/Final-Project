@@ -5,27 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Base Styles -->
-  <link rel="stylesheet" type="text/css" href="sampling/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="sampling/css/naviagtion.css">
-  <link rel="stylesheet" type="text/css" href="sampling/css/flexbox.css">
-  <link rel="stylesheet" type="text/css" href="sampling/css/image_viewer.css">
-  <link rel="stylesheet" type="text/css" href="sampling/css/fill.css">
-  <link rel="stylesheet" type="text/css" href="sampling/css/afton-styles.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/naviagtion.css">
+  <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+  <link rel="stylesheet" type="text/css" href="css/fill.css">
+
   <!-- Page-Specific Styles -->
   <link rel="stylesheet" type="text/css" href="css/circus_baby_css/base.css">
   <link rel="stylesheet" type="text/css" href="css/circus_baby_css/header.css">
   <link rel="stylesheet" type="text/css" href="css/circus_baby_css/content.css">
   <link rel="stylesheet" type="text/css" href="css/circus_baby_css/features.css">
   <link rel="stylesheet" type="text/css" href="css/circus_baby_css/footer.css">
-  
+
   <!-- Animation and Fonts -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Geo:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Rubik+Pixels&family=Silkscreen:wght@400;700&family=Sixtyfour+Convergence&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tourney:ital,wght@0,100..900;1,100..900&family=Workbench&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
-  
-  <link rel="Icon" type="image/x-icon" href="images/Sister Location Tab Icon.avif">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Geo:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Rubik+Pixels&family=Silkscreen:wght@400;700&family=Sixtyfour+Convergence&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tourney:ital,wght@0,100..900;1,100..900&family=Workbench&family=ZCOOL+QingKe+HuangYou&display=swap"
+    rel="stylesheet">
+
+  <link rel="Icon" type="image/x-icon" href="images/sl_tab_icon.avif">
   <title>Circus Baby's Entertainment & Rentals</title>
 </head>
 
@@ -33,7 +33,6 @@
 
   <header style="z-index: 100;">
     <nav>
-      <a href="index.html" class="skip round-left color-land">landing page</a>
       <a href="gallery.html" class="skip color-fnaf1">Fazbears Pizza</a>
       <a href="what_can_you_do.html" class="skip color-fnaf3">Fazbears Frights</a>
       <a href="circus_baby.html" class="skip color-fnaf5">Circus Baby's</a>
@@ -43,34 +42,34 @@
   </header>
 
   <div class="fill-bg" style="height: 100vh; z-index: -2; position: fixed; top: 50px;">
-    <img src="sampling/images/backgrounds/Sister Location Wallpaper.png" alt="A dimly lit underground facility hallway" class="">
+    <img src="images/sl_wallpaper.png" alt="A dimly lit underground facility hallway" class="">
   </div>
-
-  <div id='imgViewer' class="imgViewer hidden"></div>
 
   <div id="gallery" class="gallery" style="opacity: 1;">
     <section class="cb-container flex-container" data-aos="fade-up" data-aos-delay="50">
       <div class="row flex-space flex-center pad-1t">
-        <div class="fill-2" style="width: 200px; height: 200px;" data-aos="fade-up" data-aos-delay="250">
-          <img src="sampling/images/general_graphics/Circus Baby Logo.webp" alt="Circus Baby's Entertainment and Rentals logo" data-full_image="circus_baby/circus_baby_logo.webp">
+        <div class="logo-container" data-aos="fade-up" data-aos-delay="250">
+          <img src="images/circus_baby_logo.webp" alt="Circus Baby's Entertainment and Rentals logo"
+            style="object-fit: contain;">
         </div>
-        <div class="title-adj" style="font-size: 2.8vw;" data-aos="fade-up" data-aos-delay="450">
-          <h1 class="cb-title-main">CIRCUS BABY'S</h1>
-          <h1 class="cb-title-sub">ENTERTAINMENT & RENTALS</h1>
-        </div>
+
       </div>
 
       <div class="row flex-space pad-2t pad-1b">
         <div class="column flex-center" data-aos="fade-right" data-aos-delay="150">
           <div class="fill-3" style="width: 350px;">
-            <img src="sampling/images/general_graphics/Circus Baby on Stage.png" alt="Circus Baby on her show stage" data-full_image="circus_baby/baby_showstage.webp">
+            <img src="images/circus_baby_on_stage.png" alt="Circus Baby on her show stage"
+              data-full_image="circus_baby/baby_showstage.webp">
           </div>
         </div>
         <div class="column grow" data-aos="fade-left" data-aos-delay="350">
           <div class="cb-text-box">
             <h2 class="cb-heading">PREMIUM ENTERTAINMENT SOLUTIONS</h2>
-            <p class="cb-text">At Circus Baby's Entertainment & Rentals, we specialize in cutting-edge animatronic entertainment for private parties and events. Our state-of-the-art facilities and advanced robotic performers will make your event unforgettable.</p>
-            <p class="cb-text">Founded by renowned roboticist William Afton, our animatronics feature the latest in voice recognition, movement technology, and interactive capabilities.</p>
+            <p class="cb-text">At Circus Baby's Entertainment & Rentals, we specialize in cutting-edge animatronic
+              entertainment for private parties and events. Our state-of-the-art facilities and advanced robotic
+              performers will make your event unforgettable.</p>
+            <p class="cb-text">Founded by renowned roboticist William Afton, our animatronics feature the latest in
+              voice recognition, movement technology, and interactive capabilities.</p>
           </div>
         </div>
       </div>
@@ -79,18 +78,95 @@
         <div class="column grow" data-aos="fade-right" data-aos-delay="350">
           <div class="cb-text-box">
             <h2 class="cb-heading">OUR STAR PERFORMERS</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Circus Baby -->
+      <div class="row flex-space pad-hb">
+        <div class="column grow" data-aos="fade-right" data-aos-delay="150">
+          <div class="cb-text-box">
+            <h3 class="cb-subheading">CIRCUS BABY</h3>
+            <p class="cb-text">Our lead performer with advanced ice cream dispensing capabilities and built-in audience
+              analysis systems. Perfect for birthday parties and corporate events.</p>
             <ul class="cb-list">
-              <li><span class="cb-highlight">Circus Baby</span> - Our lead performer with advanced ice cream dispensing capabilities</li>
-              <li><span class="cb-highlight">Ballora</span> - Graceful ballerina animatronic with motion-sensing abilities</li>
-              <li><span class="cb-highlight">Funtime Foxy</span> - Interactive pirate fox with built-in voice mimicry</li>
-              <li><span class="cb-highlight">Funtime Freddy</span> - Comedic bear with modular accessory system</li>
-              <li><span class="cb-highlight">Bon-Bon</span> - Hand-puppet companion for personalized interactions</li>
+              <li>Height: 7.2 ft</li>
+              <li>Weight: 585 lbs</li>
+              <li>Special Feature: Built-in helium tank</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column flex-center" data-aos="fade-right" data-aos-delay="150">
+          <div class="hover-gif-container">
+            <!-- Static image -->
+            <img src="images/circus_baby.webp" alt="Circus Baby" class="static-image">
+            <!-- Animated GIF -->
+            <img src="gifs/elizabeth_scooped.gif" alt="Circus Baby animation" class="animated-gif">
+          </div>
+        </div>
+      </div>
+
+      <!-- Ballora -->
+      <div class="row flex-space pad-hb">
+        <div class="column flex-center order-swap" data-aos="fade-right" data-aos-delay="150">
+          <div class="fill-3" style="width: 35vw; max-width: 350px;">
+            <img src="images/ballora.webp" alt="Ballora animatronic" data-full_image="circus_baby/ballora.webp">
+          </div>
+        </div>
+        <div class="column grow" data-aos="fade-left" data-aos-delay="150">
+          <div class="cb-text-box">
+            <h3 class="cb-subheading">BALLORA</h3>
+            <p class="cb-text">Graceful ballerina animatronic with motion-sensing abilities and elegant dance
+              programming. Ideal for formal events and art exhibitions.</p>
+            <ul class="cb-list">
+              <li>Height: 6.2 ft</li>
+              <li>Weight: 347 lbs</li>
+              <li>Special Feature: 360° pirouette</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Funtime Foxy -->
+      <div class="row flex-space pad-hb">
+        <div class="column grow" data-aos="fade-right" data-aos-delay="150">
+          <div class="cb-text-box">
+            <h3 class="cb-subheading">FUNTIME FOXY</h3>
+            <p class="cb-text">Interactive pirate fox with built-in voice mimicry and treasure hunt game modes. A hit
+              with children's parties and adventure-themed events.</p>
+            <ul class="cb-list">
+              <li>Height: 5.9 ft</li>
+              <li>Weight: 290 lbs</li>
+              <li>Special Feature: Retractable hook hand</li>
             </ul>
           </div>
         </div>
         <div class="column flex-center" data-aos="fade-left" data-aos-delay="150">
-          <div class="fill-3" style="width: 350px;">
-            <img src="sampling/images/general_graphics/Sister Location Lineup.webp" alt="Lineup of Circus Baby's animatronics" data-full_image="circus_baby/animatronic_lineup.webp">
+          <div class="fill-3" style="width: 35vw; max-width: 350px;">
+            <img src="images/funtime_foxy.webp" alt="Funtime Foxy animatronic"
+              data-full_image="circus_baby/funtime_foxy.webp">
+          </div>
+        </div>
+      </div>
+
+      <!-- Funtime Freddy & Bon-Bon -->
+      <div class="row flex-space pad-hb">
+        <div class="column flex-center order-swap" data-aos="fade-right" data-aos-delay="150">
+          <div class="fill-3" style="width: 35vw; max-width: 350px;">
+            <img src="images/funtime_freddy_and_bonbon.webp" alt="Funtime Freddy and Bon-Bon"
+              data-full_image="circus_baby/freddy_bonbon.webp">
+          </div>
+        </div>
+        <div class="column grow" data-aos="fade-left" data-aos-delay="150">
+          <div class="cb-text-box">
+            <h3 class="cb-subheading">FUNTIME FREDDY & BON-BON</h3>
+            <p class="cb-text">Comedic bear duo with modular accessory system and interactive puppet companion. Perfect
+              for comedy shows and children's entertainment.</p>
+            <ul class="cb-list">
+              <li>Height: 6.0 ft (Freddy)</li>
+              <li>Weight: 350 lbs (combined)</li>
+              <li>Special Feature: Dual voice systems</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -102,7 +178,8 @@
             <div class="column" style="flex: 1; padding: 20px;">
               <div class="cb-feature-item">
                 <h3 class="cb-subheading">24/7 Availability</h3>
-                <p class="cb-text-small">Our underground facility operates around the clock to meet your entertainment needs.</p>
+                <p class="cb-text-small">Our underground facility operates around the clock to meet your entertainment
+                  needs.</p>
               </div>
             </div>
             <div class="column" style="flex: 1; padding: 20px;">
@@ -125,9 +202,8 @@
         <div class="cb-cta-box" data-aos="fade-up" data-aos-delay="150">
           <h2 class="cb-heading-center">BOOK YOUR EVENT TODAY</h2>
           <p class="cb-text-center">Contact our sales team to discuss rental options and pricing</p>
-          <div class="cb-button" onclick="alert('Thank you for your interest! A sales representative will contact you shortly.')">REQUEST INFORMATION</div>
+          <div class="cb-button" id="request-btn">REQUEST INFORMATION</div>
         </div>
-      </div>
     </section>
   </div>
 
@@ -135,22 +211,51 @@
   <script src="javascript/gallery.js"></script>
   <script>
     AOS.init();
-    
-    // Simple JavaScript interaction for the CTA button
-    document.querySelectorAll('.cb-button').forEach(button => 
-    {
-      button.addEventListener('mouseenter', () => 
-      {
+
+    // Interaction for the CTA button
+    document.querySelectorAll('.cb-button').forEach(button => {
+      button.addEventListener('mouseenter', () => {
         button.style.transform = 'scale(1.05)';
         button.style.boxShadow = '0 0 15px rgba(255, 0, 255, 0.7)';
       });
-      button.addEventListener('mouseleave', () => 
-      {
+      button.addEventListener('mouseleave', () => {
         button.style.transform = 'scale(1)';
         button.style.boxShadow = '0 0 10px rgba(255, 0, 255, 0.5)';
       });
     });
   </script>
+
+  <footer class="cb-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Circus Baby's Entertainment & Rentals</h3>
+        <p>© 2023 Afton Robotics LLC</p>
+        <p>All animatronics patented</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Underground Facility</p>
+        <p>1-555-ICE-CREAM</p>
+        <p>notforchildren@aftonrobotics.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Terms of Service</a>
+        <a href="#">Safety Disclaimers</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>This facility is not responsible for accidental dismemberment</p>
+    </div>
+
+    <div class="footer-gif" id="butters-trigger" style="cursor: pointer;">
+      <img src="gifs/handunit_gif.webp" alt="HandUnit Surprise">
+    </div>
+  </footer>
+
+  <script src="javascript/easteregg.js"></script>
+  <script src="javascript/audioegg.js"></script>
 
 </body>
 

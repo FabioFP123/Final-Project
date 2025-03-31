@@ -1,22 +1,19 @@
 /* Circus Baby's Content Styles */
-.cb-text-box 
-{
+.cb-text-box {
     background-color: rgba(0, 20, 40, 0.6);
     border-left: 5px solid #00adee;
     padding: 20px;
     margin: 10px;
 }
 
-.cb-heading 
-{
+.cb-heading {
     font-family: 'Silkscreen', sans-serif;
     color: #00adee;
     margin-bottom: 15px;
     font-size: 1.8em;
 }
 
-.cb-heading-center 
-{
+.cb-heading-center {
     font-family: 'Silkscreen', sans-serif;
     color: #00adee;
     margin-bottom: 15px;
@@ -24,53 +21,124 @@
     text-align: center;
 }
 
-.cb-text 
-{
+.cb-text {
     font-family: 'Tomorrow', sans-serif;
     color: #e0e0e0;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-.cb-text-small 
-{
+.cb-text-small {
     font-family: 'Tomorrow', sans-serif;
     color: #e0e0e0;
     line-height: 1.4;
     font-size: 0.9em;
 }
 
-.cb-text-center 
-{
+.cb-text-center {
     font-family: 'Tomorrow', sans-serif;
     color: #e0e0e0;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.cb-list 
-{
+.cb-list {
     font-family: 'Tomorrow', sans-serif;
     color: #e0e0e0;
     line-height: 1.8;
     padding-left: 20px;
 }
 
-.cb-highlight 
-{
+.cb-highlight {
     color: #ff4d9e;
     font-weight: bold;
 }
 
-@media screen and (max-width: 600px) 
-{
-    .row.flex-space 
-    {
+/* Animatronic profile styling */
+.cb-subheading {
+    color: #ff4d9e;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.cb-subheading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #00adee, #ff4d9e);
+}
+
+.cb-list {
+    margin-top: 1rem;
+}
+
+.cb-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cb-list li::before {
+    content: "•";
+    color: #00adee;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* GIF Hover Effect */
+.hover-gif-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.static-image,
+.animated-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.animated-gif {
+    opacity: 0;
+}
+
+.hover-gif-container:hover .static-image {
+    opacity: 0;
+}
+
+.hover-gif-container:hover .animated-gif {
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .row.flex-space {
         flex-direction: column;
     }
-    
-    .column 
-    {
+
+    .column {
         width: 100%;
+    }
+}
+
+@media (max-width: 920px) {
+    .hover-gif-container {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hover-gif-container {
+        max-width: 250px;
     }
 }

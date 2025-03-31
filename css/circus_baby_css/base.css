@@ -1,29 +1,107 @@
 /* Circus Baby's Base Styles */
-body 
-{
+html {
+    height: 100%;
+}
+
+body {
     background-color: #0a0a1a;
     z-index: 0;
 }
 
-.cb-container 
-{
+.cb-container {
     border: 25px solid;
     border-top: 0px;
     border-bottom: 0px;
     border-image: linear-gradient(90deg, rgba(0, 173, 238, 0) 0%, rgb(0, 173, 238) 10%, rgb(0, 173, 238) 90%, rgba(0, 173, 238, 0) 100%) 50 50 50 50 stretch stretch;
-    margin: auto;
+    margin: 0 auto 200px;
     background-color: rgba(10, 10, 26, 0.85);
     background-image: linear-gradient(0deg, rgba(10, 10, 26, 0.2) 50%, rgba(0, 20, 40, 0.2) 50%);
     background-size: 10px 10px;
     width: 900px;
+    min-height: calc(100vh - 70px);
+    position: relative;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 920px) 
-{
-    .cb-container 
-    {
+[data-aos] {
+    overflow: visible !important;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+html {
+    font-size: 16px;
+    position: relative;
+    min-height: 100%;
+}
+
+/* Container fluidity */
+.cb-container {
+    width: 90% !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Flexible typography */
+.cb-title-main,
+.cb-title-sub {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.cb-heading {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.cb-text {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+
+@media screen and (max-width: 920px) {
+    .cb-container {
+        width: 100%;
         border-left: 8px solid #00adee;
         border-right: 8px solid #00adee;
-        width: 100%;
+        margin-bottom: 180px;
+    }
+
+    .cb-container::after {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cb-container {
+        margin-bottom: 220px;
+    }
+
+    .cb-container::after {
+        height: 220px;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 13px;
     }
 }
