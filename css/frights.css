@@ -2,7 +2,7 @@
 
 body {
     display: grid;
-    --green: #008000;
+    --green: #b3ffa3;
     --bg: rgb(0, 0, 0);
     background-color: var(--bg);
     color: var(--green);
