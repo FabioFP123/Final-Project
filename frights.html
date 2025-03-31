@@ -4,37 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="sampling/css/navigation.css">
     <link rel="stylesheet" type="text/css" href="sampling/css/reset.css">
     <link rel="stylesheet" type="text/css" href="sampling/css/fill.css">
     <link rel="stylesheet" href="css/frights.css">
-    <link rel="Icon" type="image/x-icon" href="sampling/images/general_graphics/favicon/fazbear_logo.ico">
+    <!-- Favicon -->
+    <link rel="Icon" type="image/x-icon" href="sampling/images/frights/favicon.ico">
+    <!-- Title -->
     <title>Fazbear Frights</title>
 </head>
+<!-- Body Class -->
 
 <body>
-
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <!-- Navigation Header -->
     <header style="z-index: 100;">
         <nav>
             <nav>
-                <a href="Fazbears.html" class="skip round-left color-fnaf1">Fazbears Pizza</a>
+                <a href="index.html" class="skip round-left color-fnaf1">Fazbears Pizza</a>
                 <a href="frights.html" class="skip color-fnaf3">Fazbears Frights</a>
-                <a href="map.html" class="skip color-fnaf5">Circus Baby's</a>
+                <a href="circus_baby.html" class="skip color-fnaf5">Circus Baby's</a>
                 <a href="map.html" class="skip color-fnafsb">Mega Pizzaplex</a>
                 <a href="map.html" class="skip round-right color-af">Afton Robotics</a>
             </nav>
         </nav>
     </header>
-
+    <!-- Main -->
     <main>
-
+        <!--  -->
         <div class="image-container">
-            <img src="sampling/images/frights/FNaF3_Office.webp" alt="Header Image of Fazbear Frights Office">
+            <img src="sampling/images/frights/FNaF3-Office.webp" alt="Header Image of Fazbear Frights Office">
             <div class="text">
                 <h1>Fazbear Frights</h1>
             </div>
         </div>
-        <div class="fill-bg" style=" height: 100vh; z-index: -2; position: fixed; top: 50px; opacity: 5%;">
+        <div class="fill-bg" style=" height: 100vh; z-index: -1; position: fixed; top: 50px; opacity: 10%;">
             <img src="sampling/images/frights/CRT.png" alt="a background image example" class="">
         </div>
 
@@ -42,46 +48,66 @@
             <div class="typewriter">
                 <h2>QUOTES</h2>
                 <div class=card>
-                    <p>"Terrifying" - William Afton</p>
+                    <p>"Terrifyingly immersive, Fazbear Frights will have you on edge the entire time!"
+
+                        - Ella M.</p>
                 </div>
                 <div class=card>
-                    <p>"Scary" - Balloon Boy</p>
+                    <p>"The jump scares are relentless, and the eerie atmosphere keeps you looking over your
+                        shoulder!"
+                        - Xavier C.</p>
                 </div>
                 <div class=card>
-                    <p>"Spooky" - Freddy Fivebear</p>
+                    <p>"A haunting, thrill-packed journey that’s not for the faint of heart."
+                        - Zoe S.</p>
+                </div>
+                <div class=card>
+                    <p>"Intense scares and creepy animatronics make this one of the best horror attractions around.
+                        This is an A+"
+
+                        - Max L.</p>
+                </div>
+                <div class=card>
+                    <p>"This is where the past comes to life... and you’ll wish it hadn't."
+
+                       <a></a> - Freddy F.</p>
+                </div>
+                <div class=card>
+                    <p>"A real journey of self-discovery, incredible animatronic." - Bill A.</p>
                 </div>
             </div>
             <div class="typewriter">
                 <h2>ATTRACTIONS</h2>
                 <div class=gallery-container>
                     <picture class="gallery">
-                        <img src="sampling/images/frights/willieafton.webp" alt="Springtrap"
-                            data-full_image="sampling/images/frights/willieafton.webp">
+                        <a href="#attraction-1"><img src="sampling/images/frights/willieafton.webp" alt="Springtrap"
+                                media="(max-width: 1100px)"
+                                data-full_image="sampling/images/frights/willieaftonx600.webp"></a>
                     </picture>
                 </div>
                 <div class=gallery-container>
                     <picture class="gallery">
-                        <img src="sampling/images/frights/FNaF3_Office.webp" alt="The Office"
-                            data-full_image="sampling/images/frights/FNaF3_Office.webp">
+                        <a href="#attraction-2"><img src="sampling/images/frights/FNaF3-Office-x600.webp"
+                                alt="The Office" data-full_image="sampling/images/frights/FNaF3-Office.webp"></a>
                     </picture>
                 </div>
                 <div class=gallery-container>
                     <picture class="gallery">
-                        <img src="sampling/images/frights/fnaf3_map.webp" alt="Map"
-                            data-full_image="sampling/images/frights/fnaf3_map.webp">
+                        <a href="#attraction-3"><img src="sampling/images/frights/fnaf3-map-x400.webp" alt="Map"
+                                data-full_image="sampling/images/frights/fnaf3-map.webp"></a>
                     </picture>
                 </div>
             </div>
 
         </div>
-        <div class="typewriter center">
-            <h2>ATTRACTIONS</h2>
+        <div class="typewriter center" id="attraction-1">
+            <h2 id="main-content">ATTRACTIONS</h2>
         </div>
 
         <div class="grid-one-three">
             <div class=gallery-container>
                 <picture class="gallery">
-                    <img src="sampling/images/frights/willieafton.webp"
+                    <img src="sampling/images/frights/willieafton-x600.webp"
                         alt="A full body photo of a decrepit animatronic"
                         data-full_image="sampling/images/frights/willieafton.webp">
                 </picture>
@@ -91,70 +117,88 @@
                     <h3>The Animatronic</h3>
                     <p>We're thrilled to announce a shocking addition to our collection — the infamous Spring Bonnie
                         model,
-                        once thought lost to time. After years of mystery surrounding the twisted history of Fredbear's
-                        Family Diner and Freddy Fazbear's Pizzaria, we've unearthed the decrepit animatronic, and it’s
+                        once thought lost to time. After years of mystery surrounding the twisted history of
+                        Fredbear's
+                        Family Diner and Freddy Fazbear's Pizzeria, we've unearthed the decrepit animatronic, and
+                        it’s
                         now part of our
                         one-of-a-kind, spine-chilling exhibit.
                         <br><br>
                         This eerie relic from the past, with its unsettling design and haunting backstory, will make
                         your heart race as you experience the fear it evokes firsthand.
-                        <br><br>
+                        <br id="attraction-2"><br>
                         Come face-to-face with the
                         nightmare, and witness the very animatronic that once was thought lost to time. It’s
-                        the ultimate experience for horror enthusiasts—Fazbear's Fright is not for the faint of heart!
+                        the ultimate experience for horror enthusiasts—Fazbear's Fright is not for the faint of
+                        heart!
                     </p>
                 </div>
             </div>
 
             <div class=gallery-container>
                 <picture class="gallery">
-                    <img src="sampling/images/frights/FNaF3_Office.webp" alt="The Office"
-                        data-full_image="sampling/images/frights/FNaF3_Office.webp">
+                    <img src="sampling/images/frights/FNaF3-Office-x600.webp" alt="The Office"
+                        data-full_image="sampling/images/frights/FNaF3-Office.webp">
                 </picture>
             </div>
             <div>
                 <div>
                     <h3>Security Office</h3>
-                    <p>we’ve brought the darkest elements of our past to life, including our immersive security office
+                    <p>we’ve brought the darkest elements of our past to life, including our immersive security
+                        office
                         experience. As you enter, you’ll be greeted by our dedicated security guard, trapped in a
                         high-stakes battle for survival.
                         <br><br>
                         The security office is designed to make you feel like you’re
                         part of the action, with flickering lights, malfunctioning monitors, and a growing sense of
-                        dread as the night wears on. Our security guard will guide you through the chaos, showcasing the
-                        tension and fear that the original night guards endured while being stalked by the malevolent
+                        dread as the night wears on. Our security guard will guide you through the chaos, showcasing
+                        the
+                        tension and fear that the original night guards endured while being stalked by the
+                        malevolent
                         animatronics.
-                        <br><br>
+                        <br id="attraction-3"><br>
                         You’ll experience firsthand the panic, the isolation, and the horror of
                         being
                         stuck in the office, trying to outlast the terror lurking in the shadows. It’s a truly
-                        interactive nightmare—Fazbear's Fright will have you questioning what's real and what’s part of
+                        interactive nightmare—Fazbear's Fright will have you questioning what's real and what’s part
+                        of
                         the show.
                     </p>
                 </div>
             </div>
 
-            <div class=gallery-container>
-                <picture class="gallery">
-                    <img src="sampling/images/frights/fnaf3_map.webp" alt="Map"
-                        data-full_image="sampling/images/frights/fnaf3_map.webp">
-                </picture>
+            <div>
+                <div class="gallery-container">
+
+                    <div class="gallery mySlides flicker">
+                        <img src="sampling/images/frights/FNAF3EmptyVent.webp" alt="Empty Vent">
+                    </div>
+
+                    <div class="mySlides flicker gallery">
+                        <img src="sampling/images/frights/SpringtrapInVent1.webp" alt=" Springtrap's Here!">
+                    </div>
+                </div>
             </div>
             <div>
                 <div>
                     <h3>The Vents</h3>
-                    <p>Welcome to one of the most nerve-wracking features of Fazbear's Fright: The Horror Attraction—the
-                        vent system! As you explore, you'll notice strategically placed cameras that give you a chilling
+                    <p>Welcome to one of the most nerve-wracking features of Fazbear's Fright: The Horror
+                        Attraction—the
+                        vent system! As you explore, you'll notice strategically placed cameras that give you a
+                        chilling
                         view of the eerie, darkened ventilation shafts where danger could be lurking at any moment.
                         <br><br>
-                        These vents are more than just a part of the building’s architecture; they’re a vital part of
+                        These vents are more than just a part of the building’s architecture; they’re a vital part
+                        of
                         the nightmare. From the comfort of your viewing area in the security office, you’ll get a
-                        front-row seat to the terrifying possibilities that lie within. Watch as the cameras flicker and
+                        front-row seat to the terrifying possibilities that lie within. Watch as the cameras flicker
+                        and
                         the shadows shift, knowing that at any moment, something could crawl through the vents, just
                         like in the stories.
                         <br><br>
                         The tension mounts as you monitor the screens, desperately trying to
-                        predict where the terror will strike next. It’s a truly unsettling experience—Fazbear's Fright
+                        predict where the terror will strike next. It’s a truly unsettling experience—Fazbear's
+                        Fright
                         lets you witness the horror in real time, but remember, it’s only a matter of time before it
                         becomes real for you, too.
                     </p>
@@ -167,8 +211,12 @@
         </div>
         <div class=three-col>
             <div class=card>
-                <div class="gallery container">
-                    <picture class="gallery"><img src="sampling/images/frights/fazbear-bronze.webp" alt="Bronze Ticket">
+                <div>
+                    <picture>
+                        <source
+                            srcset=" sampling/images/frights/fazbear-bronze.webp" 
+                            media="(max-width: 1100px)">
+                        <img src="sampling/images/frights/fazbear-bronze-400x400.webp" alt=" Bronze Token">
                     </picture>
                 </div>
                 <h3>Bronze Tickets</h3>
@@ -177,8 +225,12 @@
                 </ul>
             </div>
             <div class=card>
-                <div class="gallery container">
-                    <picture class="gallery"><img src="sampling/images/frights/fazbear-silver.webp" alt="Silver Ticket">
+                <div>
+                    <picture>
+                        <source
+                            srcset=" sampling/images/frights/fazbear-silver.webp" 
+                            media="(max-width: 1100px)">
+                        <img src="sampling/images/frights/fazbear-silver-400x400.webp" alt=" Silver Token">
                     </picture>
                 </div>
                 <h3>Silver Tickets</h3>
@@ -189,8 +241,12 @@
                 </ul>
             </div>
             <div class=card>
-                <div class="gallery container">
-                    <picture class="gallery"><img src="sampling/images/frights/fazbear-gold.webp" alt="Gold Ticket">
+                <div class>
+                    <picture>
+                        <source
+                            srcset=" sampling/images/frights/fazbear-gold.webp" 
+                            media="(max-width: 1100px)">
+                        <img src="sampling/images/frights/fazbear-gold-400x400.webp" alt=" Gold Token">
                     </picture>
                 </div>
 
@@ -204,9 +260,12 @@
             </div>
 
         </div>
+
     </main>
     <!-- Footer -->
     <footer>
+        <div class=cupcake><img src="sampling/images/frights/golden-cupcake-x200.png" alt="Golden Cupcake" height=auto
+                id="imgClickAndChange" onclick="changeImage()"></div>
         <!--footer content-->
         <p>Fazbear Frights 2033</p>
     </footer>
@@ -214,25 +273,57 @@
     <!-- Scripts -->
     <script src="https://www.youtube.com/iframe_api" async></script>
     <script src="sampling/javascript/volume.js"></script>
+    <script src="sampling/javascript/change_img.js"></script>
+    <script src="sampling/javascript/gallery.js"></script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+
+        }
+    </script>
 </body>
 
-<!-- Credits -->
+<!-- Image and Sound Credits -->
 <!-- 
 
+CRT Overlay
+https://static.doomworld.com/monthly_2019_05/scanlines.png.2859237ac5e64816bb01978e0707b2db.png
 
+Favicon
+https://cdn2.steamgriddb.com/icon/03ba283fed2772f4e477eea4f0f236b8.ico
 
+SpringTrap
+https://static.wikia.nocookie.net/characterprofile/images/9/9c/Spring.png/revision/latest?cb=20161216174557
 
+Empty Vent
+xhttps://static.wikia.nocookie.net/freddy-fazbears-pizza/images/e/ee/FNAF3EmptyVent3.png/revision/latest?cb=20150305211722
 
+Springtrap Vent
+https://static.wikia.nocookie.net/fnafapedia/images/c/cb/SpringtrapInVent1.png/revision/latest?cb=20170430180733
 
+Map
+https://freddy-fazbears-pizza.fandom.com/f/p/4400000000000483592
 
+Fazbear Frights Office
+https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/1/14/FNaF3_Office.png/revision/latest?cb=20150304224158
 
+Sound Effect
+https://www.myinstants.com/en/instant/fnaf-3-crazy-garble/
 
-
-
-
-
-
-
+Coin
+https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/1/1e/FazToken-front.png/revision/latest?cb=20190530201834
 
 -->
+
 </html>
