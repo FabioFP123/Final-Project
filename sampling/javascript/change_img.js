@@ -1,7 +1,5 @@
 function playSoundEffect() {
-    const audio = new Audio("sampling/javascript/crazy-garble.mp3");
-    console.log("Audio created:", audio);  // Logs the audio object to ensure it's created properly
-
+    const audio = new Audio("sounds/crazy-garble.mp3");
     audio.play();
 }
 function changeImage() {
