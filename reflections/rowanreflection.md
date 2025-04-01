@@ -1,0 +1,9 @@
+Reflection: 
+This assignment was the most enjoyable for me so far; the game Five Nights at Freddy's used to be one of my favorites as a kid, and the fact that I'm making something like this for it is super cool. To begin, we had Aidan create a template for us to go off on (the navigation bar/nagivation.css); my page is the pizzaplex part, so I tried to go for a cooler and flashier design (like my use of neon colors) to attract viewers. My base is pretty simple, with some images placed into a box to make them pop out more. The gallery was probably the most difficult part to complete, with setting up the arrows, ensuring that each page had two photographs stacked on top of each other to avoid awkward placing, and, of course, the last image being a glitch.
+
+I wanted the glitches and easter eggs to be pretty subtle. So, I used javascript to add small sounds that play when you click on certain parts. For example, the glitched image in the gallery reveals a spooky hidden location somewhere in the pizzaplex itself when you click on it. Another can be heard if you click on the Freddy image at the top(he calls you a superstar). I also wanted to give my page a playful mascot, so I included small gifs throughout the page, such as the little bear dancing in the bottom, to make it more enjoyable for the viewer. 
+
+We return at last to the footer, which was challenging but not as difficult as the gallery. Using some styling, there is a hidden link (✞︎♋︎■︎■︎⍓︎) that takes the user to a scary page with a rabbit mask on the screen. This is a glitch/easter egg. I wanted to find a way to incorporate the antagonist of the game, Vanny, into the page. This page is pretty straightforward; I added ominous background music, similar to what Dylan did for his main page, and a feature that allows the favicon's title to change to odd words and messages to emphasize the "glitch" part. 
+
+
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Pizzaplex</title>
+  <link rel="stylesheet" href="css/pizzaplex.css/navigation.css">
+  <link rel="stylesheet" href="css/pizzaplex.css/pizzaplex.css">
+  <link rel="stylesheet" href="css/pizzaplex.css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="icon" type="image/x-icon" href="images/Logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Geo:ital@0;1&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <a href="#content" class="skip-link">Skip to content</a>
+  <nav>
+    <a href="index.html" class="skip round-left color-land">Fazbear's Pizza</a>
+    <a href="frights.html" class="skip color-fnaf3">Fazbear's Frights</a>
+    <a href="circus_baby.html" class="skip color-fnaf5">Circus Baby's</a>
+    <a href="pizzaplex.html" class="skip color-fnafsb">Mega Pizzaplex</a>
+    <a href="afton_robotics.html" class="skip round-right color-af">Afton Robotics</a>
+  </nav>
+
+  <!-- Background -->
+  <div class="fill-bg">
+    <img src="images/Background.png" alt="Fazbear Logo" class="fill-bg">
+  </div>
+
+
+  <!-- Logo on top of the page -->
+  <section class="logo-section">
+    <img src="images/title.png" alt="Fazbear Logo" class="big-logo" onclick="playSound()">
+  </section>
+
+  <section class="pizzaplex-info" data-aos="fade-up" data-aos-duration="1000">
+    <div class="info-container">
+      <div class="info-image left-image">
+        <img src="images/freddy.jpg" alt="Pizzaplex Image Left" onclick="playSound()">
+      </div>
+
+      <div class="info-text">
+        <h2>Welcome to the Mega Pizzaplex!</h2>
+        <p>
+          The Mega Pizzaplex is the ultimate entertainment destination, filled with
+          thrilling attractions, delicious pizza, and the latest in animatronic technology.
+          Experience the nostalgia of classic Fazbear locations while enjoying a futuristic twist.
+          With multiple themed areas, exciting rides, and a state-of-the-art security system,
+          the Pizzaplex is the perfect place for family fun!!!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- plays sound when you click on freddy -->
+  <script>
+    function playSound() {
+      var audio = new Audio('audio/superstar.mp3');
+      audio.play();
+    }
+  </script>
+
+  <!-- Image gallery -->
+  <section class="image-gallery">
+    <h2 class="gallery-title">Explore Different Locations</h2>
+    <div class="gallery-wrapper">
+      <div class="gallery-arrow arrow-left">&#10094;</div>
+      <div class="gallery-container"></div>
+      <div class="gallery-arrow arrow-right">&#10095;</div>
+    </div>
+    <img src="gifs/hanging.gif" alt="Hanging Helpy" class="hanging-helpy">
+  </section>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = [
+        "images/Atrium.webp", "images/Gameroom.webp", "images/mainstage.jpg", "images/playplace.webp",
+        "images/Kitchen.webp", "images/lasertag.webp", "images/golf.jpg", "gifs/error.webp"
+      ];
+
+      let currentPage = 0;
+      const imagesPerPage = 4;
+      const galleryContainer = document.querySelector(".gallery-container");
+
+      // Play error sound when clicking image
+      const errorSound = new Audio('audio/enter.mp3');
+      const alternateImage = "images/hidden.webp";
+
+      function updateGallery() {
+        galleryContainer.innerHTML = "";
+        const start = currentPage * imagesPerPage;
+        const end = Math.min(start + imagesPerPage, images.length);
+        for (let i = start; i < end; i++) {
+          let galleryItem = document.createElement("div");
+          galleryItem.classList.add("gallery-item");
+
+          const imgElement = document.createElement("img");
+          imgElement.src = images[i];
+          imgElement.alt = `Gallery Image ${i + 1}`;
+
+          //If the image is the error one, add the click event
+          if (images[i].includes("error.webp")) {
+            imgElement.addEventListener("click", function () {
+
+              errorSound.play();
+
+              // Change the image to the alternate one
+              imgElement.src = alternateImage;
+
+              //plays sound after changing the image
+              newSound.play();
+            });
+          }
+
+          galleryItem.appendChild(imgElement);
+          galleryContainer.appendChild(galleryItem);
+        }
+      }
+
+      // Left arrow
+      document.querySelector(".arrow-left").addEventListener("click", function () {
+        if (currentPage > 0) {
+          currentPage--;
+          updateGallery();
+        }
+      });
+
+      // Right arrow
+      document.querySelector(".arrow-right").addEventListener("click", function () {
+        if ((currentPage + 1) * imagesPerPage < images.length) {
+          currentPage++;
+          updateGallery();
+        }
+      });
+
+      updateGallery();
+    });
+  </script>
+
+  <!-- //Map  -->
+  <div id="content">
+    <section id="map-container" class="map-caption" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Know your way</h2>
+      <p>Check out the different locations in the Pizzaplex with the map below</p>
+
+      <div class="map-container">
+        <img src="images/Map.jpg" alt="Map Placeholder" class="map-image">
+
+        <!-- //GIF inside the map -->
+        <div class="map-gif">
+          <img src="gifs/think.gif" alt="Helpy GIF">
+        </div>
+      </div>
+    </section>
+
+    <!-- Active Tours -->
+    <section id="active-tours" class="active-tours">
+      <h2>Active Tours</h2>
+      <div class="tour">
+        <h3>Morning Tour</h3>
+        <p><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
+        <p><strong>Description:</strong> Start your day with a guided tour through the Mega Pizzaplex, including a visit
+          to the atrium, gamerooms, and play place. Don’t miss out on the behind-the-scenes action!</p>
+      </div>
+
+      <div class="tour">
+        <h3>Afternoon Tour</h3>
+        <p><strong>Time:</strong> 1:00 PM - 3:00 PM</p>
+        <p><strong>Description:</strong> The afternoon tour takes you to the exciting Laser tag arena, bowling Alley,
+          and foodcourt. A perfect break from the fun rides!</p>
+      </div>
+
+      <div class="tour">
+        <h3>Evening Tour</h3>
+        <p><strong>Time:</strong> 5:00 PM - 7:00 PM</p>
+        <p><strong>Description:</strong> Explore the Mega Pizzaplex at night! Experience the full vibrancy our the night
+          shows, and finish the night with a special pizza treat!</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo"></div>
+      <div class="footer-info">
+        <p><b>&copy; 2035 Mega Pizzaplex. All rights reserved.</p>
+
+        <!-- Hidden text link in footer -->
+        <p><a href="Secret.html" class="glitch-effect hidden-link">✞︎♋︎■︎■︎⍓︎</a></p>
+      </div>
+      <div class="footer-gif">
+        <img src="gifs/helpy.gif" alt="Tiny GIF Placeholder">
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript to handle sound effect on click and the sound -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sound = new Audio("audio/glitch.mp3");
+      sound.preload = "auto";
+
+      const vannyLink = document.querySelector(".glitch-effect");
+
+      vannyLink.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevents the link's default behavior
+
+        // Start playing the sound
+        sound.currentTime = 0;
+        sound.volume = 1.0;
+        sound.play().catch(error => console.error("Error playing sound:", error));
+
+        // Once the sound finishes, navigate to the link's destination
+        sound.onended = function () {
+          window.location.href = vannyLink.getAttribute('href'); // Navigate to the URL
+        };
+      });
+    });
+  </script>
+</body>
+
+</html>
