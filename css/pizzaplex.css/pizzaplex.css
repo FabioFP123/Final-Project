@@ -580,19 +580,3 @@ footer {
   opacity: 0.8;
 }
 
-.click-btn {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff0000;
-  color: rgb(0, 0, 0);
-  font-size: 2em;
-  padding: 15px 30px;
-  font-family: 'Bungee Hairline', sans-serif;
-  cursor: pointer;
-  text-transform: uppercase;
-  border: 2px solid #fff;
-  transition: background-color 0.3s ease;
-  border-radius: 10px;
-}
