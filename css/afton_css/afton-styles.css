@@ -225,7 +225,7 @@ z-index: 1;
 
 
 .cool-text2{
-    background-size: 650px;
+    background-size: 700px;
     background-position: 50%;
     opacity: 100%;
     background-image: linear-gradient(to right, rgb(238, 0, 255), rgb(128, 0, 255));
@@ -311,6 +311,7 @@ z-index: 1;
 .pad-1t { padding-top: 100px;}
 .pad-ht { padding-top: 50px;}
 .pad-lt { padding-top: 30px;}
+.pad-lt-custom {}
 .pad-5b { padding-bottom: 500px;}
 .pad-3b { padding-bottom: 300px;}
 .pad-2b { padding-bottom: 200px;}
@@ -325,7 +326,24 @@ z-index: 1;
 .pad-hs { padding-left: 50px; padding-right: 50px;}
 .pad-ls { padding-left: 30px; padding-right: 30px;}
 
+@media screen and (max-width: 10000px){
+
+
+    .title-adj2{
+        font-size: 70px;
+        }
+}
+
 @media screen and (max-width: 920px){
+    .cool-text2{
+        background-size: 400px;
+        background-position: 50%;
+        opacity: 100%;
+        background-image: linear-gradient(to right, rgb(238, 0, 255), rgb(128, 0, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
     .fnaf-container {
         background-color: rgba(2, 2, 2, 0.7);
         border-left: 8px solid rgb(255, 226, 62);
@@ -345,9 +363,24 @@ z-index: 1;
         width: 150px;
         height: 150px;
         }
+
+        .title-adj2{
+            font-size: 5vw;
+            }
+
+            .pad-lt-custom { padding-top: 30px;}
 }
 
 @media screen and (max-width: 500px){
+    .cool-text2{
+        background-size: 250px;
+        background-position: 50%;
+        opacity: 100%;
+        background-image: linear-gradient(to right, rgb(238, 0, 255), rgb(128, 0, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
     .tv-text{
         text-decoration: none;
         border: none;
