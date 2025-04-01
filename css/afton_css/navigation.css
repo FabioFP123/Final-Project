@@ -27,20 +27,21 @@ nav {
     border-bottom-right-radius: 20px;
 }
 
-.color-land{ background-color: #6BA3C7;}
 .color-fnaf1{ background-color: #c77f6b;}
 .color-fnaf3{ background-color: #70ab67;}
-.color-fnaf5{ background-color: #3568c6;}
+.color-fnaf5{ background-color: #4a75c5;}
 .color-fnafsb{ background-color: #c7bb6b;}
 .color-af{ background-color: #976bc7;}
+.color-cr{ background-color: #bec2aa;}
 
 
 .color-land:visited{ background-color: #6BA3C7;}
-.color-fnaf1:visited{ background-color: #c77f6b;}
-.color-fnaf3:visited{ background-color: #70ab67;}
-.color-fnaf5:visited{ background-color: #3568c6;}
+.color-fnaf1:visited{ background-color: #c56b52;}
+.color-fnaf3:visited{ background-color: #68a85c;}
+.color-fnaf5:visited{ background-color: #3366c5;}
 .color-fnafsb:visited{ background-color: #c7bb6b;}
-.color-af:visited{ background-color: #976bc7;}
+.color-af:visited{ background-color: #9e78c7;}
+.color-cr:visited{ background-color: #c6d093;}
 /* 
 .color-land:visited{ background-color: #529ccb;}
 .color-fnaf1:visited{ background-color: #ce674b;}
