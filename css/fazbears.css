@@ -69,7 +69,17 @@ p {
     padding-top: 3px;
     padding-bottom: 30px;
     margin-top: 50px;
-    box-shadow: 5px -10px 5px -5px#af00b5;
+    box-shadow: 5px -0px 5px 2px#af00b5;
+}
+
+.img-sect{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.505);
+    padding-top: 3px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    box-shadow: 5px -0px 5px 5px#af00b5;
 }
 
 .ffp-logo {
